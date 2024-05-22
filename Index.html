@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Welcome to travel form</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <img class="bg" src="images.jpeg" alt = "iit roorkee" />
+    <div class="container">
+        <h1> 
+            Welcome to  IIT Roorkee Chennai Trip Form
+        </h1>
+        <p>
+            Enter your details  and submit this form to confirm your participation in the trip
+        
+        </p>
+        <p class="head">
+            Thanks for submitting your form. We are happy to joining us for Chennai trip
+        </p>
+    <form action="index.php" method="post">
+        <input type = "text" name="name" id ="name" placeholder="Enter your name"/>
+        <input type = "text" name="Age" id ="Age" placeholder="Enter your Age"/>
+        <input type = "text" name="Gender" id ="Gender" placeholder="Enter your Gender"/>
+        <input type = "text" name="Mobile " id ="Mobile" placeholder="Enter your Mobile No."/>
+        <input type = "text" name="Course" id ="Course" placeholder="Enter your Course"/>
+    <textarea name="desc" id="descp" cols="30" rows="10" placeholder="Enter any other information here"></textarea>
+    <button class="btn">
+        Submit
+    </button>
+    
+    </form>
+    </div>
+    <script src="index.js"></script>
+    <!-- INSERT INTO `trip` (`Sr No`, `Name`, `Age`, `Gender`, `Phone`, 
+        `Course`, `Other`, `date/time`) VALUES ('1', 'testname', '23', 'male', '1234567890', 'Btech',
+         'yes', current_timestamp()); -->
+</body>
+</html>
